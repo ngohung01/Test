@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi diosa :3</title>
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+      animation: changeBg 5s linear 10s forwards ;
+     
+
+    }
+    @keyframes changeBg{
+      0%{
+        background-color: #fff;
+      }
+      100%{
+        background-color: #000;
+      }
+    }
+    .phaohoa{
+      position: fixed;
+    }
+    .content{
+    position: fixed;
+    width: 320px;
+   
+  
+    /* transform-origin: right; */
+    }
+    .content div {
+      position: relative;
+      height: 500px;
+      margin: -30px 0;
+      z-index: 2;
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* animation : animate 10s linear alternate; */
+      
+    }
+    .content div:before{
+      content: '';
+      background: linear-gradient(-160deg, #d883d5, #d3c8e7);
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      transform: scaleX(0);
+      animation: animate 3s linear forwards;
+      animation-delay: 10s;
+
+    }
+
+    .content div h4{
+      position: absolute;
+      
+      opacity: 0;
+      
+      font-size: 16px;
+      margin: 5px;
+      padding: 10px 2px;
+      z-index: 10;
+      color: rgb(99, 95, 95);
+    }
+ 
+    .content div h4:nth-child(1){
+      animation: fadeText 3s linear forwards ,animate 3s linear forwards;  
+      animation-delay: 16s; 
+      top: 10px;
+      transform-origin: left;
+      font-family: Blippo;
+    }
+    .content div h4:nth-child(2){
+      animation: fadeText 3s linear forwards ,animate 3s linear forwards;  
+      animation-delay: 19s; 
+      bottom: 20px;
+      left: 10px;
+    }
+    @keyframes fadeText {
+      0% {
+       opacity: 0;
+      }
+      100% {
+       opacity: 1;
+      }
+    }
+    @keyframes animate{    
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+
+    
+      }
+      .content div h4:nth-child(1)::first-letter{
+        font-size: 23px;
+      }
+    .center {
+      position: relative;
+      width: 320px;
+      animation: centerEnd 4.5s linear 5.5s 1 normal forwards;
+
+    }
+    @keyframes centerEnd{
+      0%,91%{
+        opacity: 1;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+        display: none;
+      }
+    }
+    .center div {
+      position: relative;
+      height: 100px;
+      margin: -30px 0;
+      z-index: 2;
+      transform: skewY(-5deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* .center div:nth-child(2),
+    .center div:nth-child(4) {
+      transform: skewY(14.5deg);
+      z-index: 1;
+    }
+    .center div:nth-child(4) {
+      transform-origin: left;
+      transform: skewY(25deg);
+      top: -52px;
+    } */
+    .center div:nth-child(2),
+    .center div:nth-child(4),
+    .center div:nth-child(6) {
+      transform: skewY(14.5deg);
+      z-index: 1;
+    }
+    .center div:nth-child(6) {
+      transform-origin: left;
+      transform: skewY(25deg);
+      top: -52px;
+    }
+    .center div:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      
+    }
+    /* .center div:nth-child(1):before,
+    .center div:nth-child(3):before {
+      background: linear-gradient(-160deg, #ff0058, #673ab7);
+      transform: scaleX(0);
+    }
+    .center div:nth-child(2):before,
+    .center div:nth-child(4):before {
+      background: linear-gradient(-20deg, #ff0058, #38009c);
+      transform: scaleX(0);
+    } */
+    .center div:nth-child(1):before,
+    .center div:nth-child(3):before,
+    .center div:nth-child(5):before {
+      background: linear-gradient(-160deg, #ff0058, #673ab7);
+      transform: scaleX(0);
+    }
+    .center div:nth-child(2):before,
+    .center div:nth-child(4):before,
+    .center div:nth-child(6):before {
+      background: linear-gradient(-20deg, #ff0058, #38009c);
+      transform: scaleX(0);
+    }
+    /* .center div:nth-child(1):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: right;
+      animation-delay: 6s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(2):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: left;
+      animation-delay: 6.5s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(3):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: right;
+      animation-delay: 7s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(4):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: left;
+      animation-delay: 7.5s;
+      width: 60%;
+      left: 0;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    } */
+    .center div:nth-child(1):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: right;
+      animation-delay: 6s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(2):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: left;
+      animation-delay: 6.5s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(3):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: right;
+      animation-delay: 7s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(4):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: left;
+      animation-delay: 7.5s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(5):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: right;
+      animation-delay: 8s;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(6):before {
+      animation: animate 0.5s linear forwards;
+      transform-origin: left;
+      animation-delay: 8.5s;
+      width: 60%;
+      left: 0;
+    }
+    @keyframes animate {
+      0% {
+        transform: scaleX(0);
+      }
+      100% {
+        transform: scaleX(1);
+      }
+    }
+    .center div:nth-child(1):after,
+    .center div:nth-child(3):after,
+    .center div:nth-child(5):after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50%;
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .center div h2 {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+      color: #fff;
+      opacity: 0;
+    }
+    .center div:nth-child(1) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 6.5s;
+      font-size: 30px;
+    }
+    .center div:nth-child(2) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 7s;
+      font-size: 1em;
+    }
+    .center div:nth-child(3) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 7.5s;
+      font-size: 50px;
+      font-weight: 800;
+    }
+    .center div:nth-child(4) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 8s;
+      font-size: 1em;
+    }
+    .center div:nth-child(5) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 8.5s;
+      font-size: 26px;
+      font-weight: 800;
+    }
+    .center div:nth-child(6) h2 {
+      animation: fadeText 0.25s linear forwards;
+      animation-delay: 9s;
+      font-size: 1em;
+    }
+    @keyframes fadeText {
+      0% {
+       opacity: 0;
+      }
+      100% {
+       opacity: 1;
+      }
+    }
+    .loading {
+      position: fixed;
+      top: 0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 15;
+      animation: fadeout 5.5s ease forwards;
+    }
+    @keyframes fadeout {
+      0%, 91% {
+        opacity: 1;
+        visibility: visible;
+      }
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    .loading h2 {
+      color: #000;
+    }
+    .loading .bar {
+      position: relative;
+      width: 320px;
+      height: 40px;
+      background: transparent;
+      margin: 0 20px;
+      border: 2px solid #000;
+      box-sizing: border-box;
+    }
+    .loading .bar:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      transform-origin: left;
+      animation: animate 5s linear forwards;
+    }
+    .loading .bar:after {
+      content: 'Loading...';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      text-align: center;
+      line-height: 36px;
+      color: #fff;
+      font-size: 20px;
+      mix-blend-mode: difference;
+    }
+    </style>
+</head>
+<body>
+ 
+  
+  <title>Happy New Year 2023</title>
+  <div class="loading">
+    <h2>2022</h2>
+    <div class="bar"></div>
+    <h2>2023</h2>
+  </div>
+  <div class="center">
+    <div>
+      <h2>Chúc mừng năm mới</h2>
+    </div>
+    <div>
+      <h2>~ ~ ~</h2>
+    </div>
+    <div>
+      <h2>Ánh Ngọc</h2>
+    </div>
+    <div>
+      <h2>~ ~ ~</h2>
+    </div>
+    <div>
+      <h2>Năm mới vui vẻ nhớ :3</h2>
+    </div>
+    <div>
+      <h2>!!!</h2>
+    </div>
+  </div>
+  <div class="content">
+    <div>
+    <h4><i>Năm mới tết đến 🎉🎉 <br>
+      Chúc em vui vẻ :))  <br>
+      Tiền đầy túi 💵💵💵 <br>
+      Gạo đầy lu 🥰🥰🥰 <br>
+      Tim đầy tình 💓💓💓  <br>
+      Xăng đầy bình ⛽⛽⛽ <br>
+      Vàng bạc đầy tủ 💵💵💵 <br>
+      Sức khỏe đầy đủ 💪💪💪 <br>
+      Chúc mừng năm mới 🎉🎉</i>
+    </h4>
+    <h4><i>Năm mới, một chặng đường mới. Nếu muốn tìm một người đồng hành, thì anh đây nè :33</i></h4>
+  </div>
+
+  </div>
+ <div class="phaohoa">
+  
+  <canvas id="canvas">Canvas is not supported in your browser.</canvas>
+  <script>
+      // when animating on canvas, it is best to use requestAnimationFrame instead of setTimeout or setInterval
+// not supported in all browsers though and sometimes needs a prefix, so we need a shim
+window.requestAnimFrame = ( function() {
+return window.requestAnimationFrame ||
+      window.webkitRequestAnimationFrame ||
+      window.mozRequestAnimationFrame ||
+      function( callback ) {
+        window.setTimeout( callback, 1000 / 60 );
+      };
+})();
+
+// now we will setup our basic variables for the demo
+var canvas = document.getElementById( 'canvas' ),
+  ctx = canvas.getContext( '2d' ),
+  // full screen dimensions
+  cw = window.innerWidth,
+  ch = window.innerHeight,
+  // firework collection
+  fireworks = [],
+  // particle collection
+  particles = [],
+  // starting hue
+  hue = 120,
+  // when launching fireworks with a click, too many get launched at once without a limiter, one launch per 5 loop ticks
+  limiterTotal = 20,
+  limiterTick = 0,
+  // this will time the auto launches of fireworks, one launch per 80 loop ticks
+  timerTotal = 500,
+  timerTick = 0,
+  mousedown = false,
+  // mouse x coordinate,
+  mx,
+  // mouse y coordinate
+  my;
+
+  
+// set canvas dimensions
+canvas.width = cw;
+canvas.height = ch;
+
+// now we are going to setup our function placeholders for the entire demo
+
+// get a random number within a range
+function random( min, max ) {
+return Math.random() * ( max - min ) + min;
+}
+
+// calculate the distance between two points
+function calculateDistance( p1x, p1y, p2x, p2y ) {
+var xDistance = p1x - p2x,
+    yDistance = p1y - p2y;
+return Math.sqrt( Math.pow( xDistance, 2 ) + Math.pow( yDistance, 2 ) );
+}
+
+// create firework
+function Firework( sx, sy, tx, ty ) {
+// actual coordinates
+this.x = sx;
+this.y = sy;
+// starting coordinates
+this.sx = sx;
+this.sy = sy;
+// target coordinates
+this.tx = tx;
+this.ty = ty;
+// distance from starting point to target
+this.distanceToTarget = calculateDistance( sx, sy, tx, ty );
+this.distanceTraveled = 0;
+// track the past coordinates of each firework to create a trail effect, increase the coordinate count to create more prominent trails
+this.coordinates = [];
+this.coordinateCount = 3;
+// populate initial coordinate collection with the current coordinates
+while( this.coordinateCount-- ) {
+  this.coordinates.push( [ this.x, this.y ] );
+}
+this.angle = Math.atan2( ty - sy, tx - sx );
+this.speed = 2;
+this.acceleration = 1.05;
+this.brightness = random( 50, 70 );
+// circle target indicator radius
+this.targetRadius = 1;
+}
+
+// update firework
+Firework.prototype.update = function( index ) {
+// remove last item in coordinates array
+this.coordinates.pop();
+// add current coordinates to the start of the array
+this.coordinates.unshift( [ this.x, this.y ] );
+
+// cycle the circle target indicator radius
+if( this.targetRadius < 8 ) {
+  this.targetRadius += 0.3;
+} else {
+  this.targetRadius = 1;
+}
+
+// speed up the firework
+this.speed *= this.acceleration;
+
+// get the current velocities based on angle and speed
+var vx = Math.cos( this.angle ) * this.speed,
+    vy = Math.sin( this.angle ) * this.speed;
+// how far will the firework have traveled with velocities applied?
+this.distanceTraveled = calculateDistance( this.sx, this.sy, this.x + vx, this.y + vy );
+
+// if the distance traveled, including velocities, is greater than the initial distance to the target, then the target has been reached
+if( this.distanceTraveled >= this.distanceToTarget ) {
+  createParticles( this.tx, this.ty );
+  // remove the firework, use the index passed into the update function to determine which to remove
+  fireworks.splice( index, 1 );
+} else {
+  // target not reached, keep traveling
+  this.x += vx;
+  this.y += vy;
+}
+}
+
+// draw firework
+Firework.prototype.draw = function() {
+ctx.beginPath();
+// move to the last tracked coordinate in the set, then draw a line to the current x and y
+ctx.moveTo( this.coordinates[ this.coordinates.length - 1][ 0 ], this.coordinates[ this.coordinates.length - 1][ 1 ] );
+ctx.lineTo( this.x, this.y );
+ctx.strokeStyle = 'hsl(' + hue + ', 100%, ' + this.brightness + '%)';
+ctx.stroke();
+
+ctx.beginPath();
+// draw the target for this firework with a pulsing circle
+//ctx.arc( this.tx, this.ty, this.targetRadius, 0, Math.PI * 2 );
+ctx.stroke();
+}
+
+// create particle
+function Particle( x, y ) {
+this.x = x;
+this.y = y;
+// track the past coordinates of each particle to create a trail effect, increase the coordinate count to create more prominent trails
+this.coordinates = [];
+this.coordinateCount = 5;
+
+while( this.coordinateCount-- ) {
+  this.coordinates.push( [ this.x, this.y ] );
+}
+// set a random angle in all possible directions, in radians
+this.angle = random( 0, Math.PI * 2 );
+this.speed = random( 1, 10 );
+// friction will slow the particle down
+this.friction = 0.95;
+// gravity will be applied and pull the particle down
+this.gravity = 0.6;
+// set the hue to a random number +-20 of the overall hue variable
+this.hue = random( hue - 20, hue + 20 );
+this.brightness = random( 50, 80 );
+this.alpha = 1;
+// set how fast the particle fades out
+this.decay = random( 0.0075, 0.009 );
+}
+
+// update particle
+Particle.prototype.update = function( index ) {
+// remove last item in coordinates array
+this.coordinates.pop();
+// add current coordinates to the start of the array
+this.coordinates.unshift( [ this.x, this.y ] );
+// slow down the particle
+this.speed *= this.friction;
+// apply velocity
+this.x += Math.cos( this.angle ) * this.speed;
+this.y += Math.sin( this.angle ) * this.speed + this.gravity;
+// fade out the particle
+this.alpha -= this.decay;
+
+// remove the particle once the alpha is low enough, based on the passed in index
+if( this.alpha <= this.decay ) {
+  particles.splice( index, 1 );
+}
+}
+
+// draw particle
+Particle.prototype.draw = function() {
+ctx. beginPath();
+// move to the last tracked coordinates in the set, then draw a line to the current x and y
+ctx.moveTo( this.coordinates[ this.coordinates.length - 1 ][ 0 ], this.coordinates[ this.coordinates.length - 1 ][ 1 ] );
+ctx.lineTo( this.x, this.y );
+ctx.strokeStyle = 'hsla(' + this.hue + ', 100%, ' + this.brightness + '%, ' + this.alpha + ')';
+
+ctx.stroke();
+}
+
+// create particle group/explosion
+function createParticles( x, y ) {
+// increase the particle count for a bigger explosion, beware of the canvas performance hit with the increased particles though
+var particleCount = 20;
+while( particleCount-- ) {
+  particles.push( new Particle( x, y ) );
+}
+}
+
+
+// main demo loop
+function loop() {
+// this function will run endlessly with requestAnimationFrame
+requestAnimFrame( loop );
+
+// increase the hue to get different colored fireworks over time
+hue += 0.5;
+
+// normally, clearRect() would be used to clear the canvas
+// we want to create a trailing effect though
+// setting the composite operation to destination-out will allow us to clear the canvas at a specific opacity, rather than wiping it entirely
+ctx.globalCompositeOperation = 'destination-out';
+// decrease the alpha property to create more prominent trails
+ctx.fillStyle = 'rgba(0, 0, 0, 0.5)';
+ctx.fillRect( 0, 0, cw, ch );
+// change the composite operation back to our main mode
+// lighter creates bright highlight points as the fireworks and particles overlap each other
+ctx.globalCompositeOperation = 'lighter';
+
+// loop over each firework, draw it, update it
+var i = fireworks.length;
+while( i-- ) {
+  fireworks[ i ].draw();
+  fireworks[ i ].update( i );
+}
+
+// loop over each particle, draw it, update it
+var i = particles.length;
+while( i-- ) {
+  particles[ i ].draw();
+  particles[ i ].update( i );
+
+}
+
+
+// launch fireworks automatically to random coordinates, when the mouse isn't down
+if( timerTick >= timerTotal ) {
+  timerTick = 0;
+} else {
+  var temp = timerTick % 400;
+  if(temp <= 15){		
+    fireworks.push( new Firework( 100, ch, random( 190, 200 ), random(90, 100) ));
+    fireworks.push( new Firework( cw - 100, ch, random(cw - 200, cw - 190), random(90, 100) ));
+  }
+
+  var temp3 = temp / 10;
+
+  if(temp > 319){
+    fireworks.push(new Firework(300 + (temp3 - 31 ) * 100 , ch, 300 + (temp3 - 31) * 100 , 200));
+  }
+
+  timerTick++;
+}
+
+// limit the rate at which fireworks get launched when mouse is down
+if( limiterTick >= limiterTotal ) {
+  if( mousedown ) {
+    // start the firework at the bottom middle of the screen, then set the current mouse coordinates as the target
+    fireworks.push( new Firework( cw / 2, ch, mx, my ) );
+    limiterTick = 0;
+  }
+} else {
+  limiterTick++;
+}
+}
+
+// mouse event bindings
+// update the mouse coordinates on mousemove
+canvas.addEventListener( 'mousemove', function( e ) {
+mx = e.pageX - canvas.offsetLeft;
+my = e.pageY - canvas.offsetTop;
+});
+
+// toggle mousedown state and prevent canvas from being selected
+canvas.addEventListener( 'mousedown', function( e ) {
+e.preventDefault();
+mousedown = true;
+});
+
+canvas.addEventListener( 'mouseup', function( e ) {
+e.preventDefault();
+mousedown = false;
+});
+
+// once the window loads, we are ready for some fireworks!
+window.onload = loop;
+  </script>
+ </div>
+  
+</div>
+</body>
+</html>
